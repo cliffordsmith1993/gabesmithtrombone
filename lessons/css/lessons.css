@@ -1,0 +1,443 @@
+/*
+	Copyright: www.gabesmithtrombone.com 2017
+	Created and powered by: CS4 Development
+	Update: 6/8/2017
+*/
+
+/*Lessons Page*/
+body.body {
+	background-color: #f3f3f3;
+	background-image: url('');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+}
+/*Standard Screens*/
+@media screen and (min-width: 800px) {
+	/*Header*/
+	div.header header a {
+		text-align: center;
+		font-size: 70px;
+		display: block;
+		font-family: 'Raleway', sans-serif;
+		color: black;
+	}
+
+	/*Nav bar*/
+	div nav.navbar ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav.navbar ul li {
+		display: inline;
+	}
+
+	nav.navbar ul li a {
+		font-family: 'Raleway', sans-serif;
+		text-decoration: none;
+		font-size: 20px;
+		color: black;
+		margin: 2em;
+	}
+	nav.navbar ul li a:hover {
+		color: blue;
+		border: 1px solid blue;
+		border-right: none;
+		border-left: none;
+	}
+	.responsive-menu {
+		display: none;
+	}
+
+	/*Icons*/
+	div.icons {
+		margin-top: -7.7em;
+		text-align: right;
+	}
+	div.icons a {
+		margin-right: 2em;
+	}
+	div.icons a img {
+		filter: grayscale(10);
+	}
+	div.icons a img:hover {
+		filter: none;
+	}
+
+	/*Testimonial*/
+	.full-width-testimonial {
+	  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("https://upload.wikimedia.org/wikipedia/commons/8/82/Chicago_sunrise_1.jpg");
+	  background-position: center center;
+	  margin-top: 5em;
+	}
+
+	.full-width-testimonial-icon .quote-path {
+	  fill: none;
+	  stroke: #ffae00;
+	  stroke-width: 2.5192;
+	  stroke-miterlimit: 10;
+	}
+
+	.full-width-testimonial-content,
+	.full-width-testimonial-icon {
+	  text-align: center;
+	}
+
+	.full-width-testimonial-section {
+	  padding-top: 2rem;
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-text {
+	  font-weight: 300;
+	  color: #ffffff;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	  margin-top: -5px;
+	  padding-left: 50px;
+	  padding-right: 50px;
+	  font-size: 1.5em;
+	}
+
+	@media print, screen and (min-width: 40em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 100px;
+	    padding-right: 100px;
+	  }
+	}
+
+	@media print, screen and (min-width: 64em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 180px;
+	    padding-right: 180px;
+	    font-size: 1.8em;
+	  }
+	}
+
+	@media screen and (min-width: 75em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 300px;
+	    padding-right: 300px;
+	  }
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-source {
+	  font-size: 1.2em;
+	  font-weight: 600;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  letter-spacing: 1.5px;
+	  padding-bottom: 0;
+	  margin-bottom: 0.2em;
+	  font-size: 1.0em;
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-source-context {
+	  display: block;
+	  font-size: 0.9em;
+	  font-weight: 500;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  letter-spacing: 1.5px;
+	  font-size: 0.8em;
+	}
+
+	.full-width-testimonial-section .slick-slider {
+	  margin-bottom: 0px;
+	}
+
+	.full-width-testimonial-text,
+	.full-width-testimonial-content,
+	.full-width-testimonial-source,
+	.full-width-testimonial-icon {
+	  padding-bottom: 2rem;
+	}
+
+	.full-width-testimonial-content {
+	  width: 100%;
+	}
+
+	/*4 up*/
+	.marketing-site-three-up {
+	  text-align: center;
+	  padding: 2rem 0;
+	}
+
+	.marketing-site-three-up .row {
+	  max-width: 900px;
+	}
+
+	.marketing-site-three-up .columns {
+	  margin-bottom: 1rem;
+	}
+
+	@media screen and (min-width: 40em) {
+	  .marketing-site-three-up .columns {
+	    margin-bottom: 0;
+	  }
+	}
+
+	.marketing-site-three-up .fa {
+	  font-size: 3rem;
+	  margin-bottom: 1rem;
+	  color: #1779ba;
+	}
+
+	.marketing-site-three-up-headline {
+	  margin-bottom: 2rem;
+	  font-size: 24px;
+	}
+	i {
+		font-size: 3em;
+	}
+
+	/*Footer*/
+	footer {
+		font-family: 'Raleway',sans-serif;
+		margin-top: 3em;
+		color: black;
+		text-align: center;
+	}
+	footer a {
+		text-decoration: none;
+		color: black;
+	}
+	footer a:hover {
+		color: blue;
+	}
+
+}
+
+
+/*---Mobile Devices---*/
+@media screen and (min-width: 0px) and (max-width:799px) {
+	/*Header*/
+	div.header header a {
+		font-family: 'Raleway', sans-serif;
+		color: black;
+		text-align: center;
+		font-size: 30px;
+		display: block;
+		margin-top: .6em;	
+	}
+	div.header header a:hover {
+		color: black;
+	}
+	/*Nav bar*/
+	div nav.navbar ul {
+		display: none;
+	}
+
+
+	.menu-btn div {
+		position: absolute;
+		left: 100%;
+		top: 64%;
+		padding-right: 8px;
+		margin-top: -0.50em;
+		line-height: 1.2;
+		font-size: 18px;
+		font-weight: 200;
+		vertical-align: middle;
+		z-index: 99;
+	}
+	.mobile-nav {
+		position: absolute;
+		display: block;
+		margin-top: -2.1em;
+		margin-left: 1em;
+	}
+	.menu-btn span {
+		display: block;
+		width: 40px;
+		height: 5px;
+		margin: 5px 0;
+		background: rgb(0,0,0);
+		z-index: 99;
+	}
+
+	.responsive-menu{
+		display: none;
+		border: 1px solid black;
+		background-color: #f3f3f3;
+	}
+	.responsive-menu li, .responsive-menu li a {
+		font-family: 'Raleway', sans-serif;
+		text-align: center;
+		list-style-type: none;
+		text-decoration: none;
+		color: black;
+		margin-right: 1em;
+	}
+	.responsive-menu li a:hover {
+		color: blue;
+		border: 1px solid blue;
+		border-right: none;
+		border-left: none;
+	}
+	.expand {
+		display: block !important; 
+		position: absolute;
+	}
+	
+    /*Icons*/
+	div.icons {
+		text-align: right;
+		margin-top: -3em;
+		display: none;
+	}
+	div.icons a {
+		margin: .2em;
+	}
+	div.icons a img {
+		filter: grayscale(10);
+	}
+	div.icons a img:hover {
+		filter: none;
+	}
+
+	/*Testimonial*/
+	.full-width-testimonial {
+	  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)), url("https://upload.wikimedia.org/wikipedia/commons/8/82/Chicago_sunrise_1.jpg");
+	  background-position: center center;
+	  margin-top: 5em;
+	}
+
+	.full-width-testimonial-icon .quote-path {
+	  fill: none;
+	  stroke: #ffae00;
+	  stroke-width: 2.5192;
+	  stroke-miterlimit: 10;
+	}
+
+	.full-width-testimonial-content,
+	.full-width-testimonial-icon {
+	  text-align: center;
+	}
+
+	.full-width-testimonial-section {
+	  padding-top: 2rem;
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-text {
+	  font-weight: 300;
+	  color: #ffffff;
+	  padding-left: 30px;
+	  padding-right: 30px;
+	  margin-top: -5px;
+	  padding-left: 50px;
+	  padding-right: 50px;
+	  font-size: 1.5em;
+	}
+
+	@media print, screen and (min-width: 40em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 100px;
+	    padding-right: 100px;
+	  }
+	}
+
+	@media print, screen and (min-width: 64em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 180px;
+	    padding-right: 180px;
+	    font-size: 1.8em;
+	  }
+	}
+
+	@media screen and (min-width: 75em) {
+	  .full-width-testimonial-section .full-width-testimonial-text {
+	    padding-left: 300px;
+	    padding-right: 300px;
+	  }
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-source {
+	  font-size: 1.2em;
+	  font-weight: 600;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  letter-spacing: 1.5px;
+	  padding-bottom: 0;
+	  margin-bottom: 0.2em;
+	  font-size: 1.0em;
+	}
+
+	.full-width-testimonial-section .full-width-testimonial-source-context {
+	  display: block;
+	  font-size: 0.9em;
+	  font-weight: 500;
+	  color: #ffffff;
+	  text-transform: uppercase;
+	  letter-spacing: 1.5px;
+	  font-size: 0.8em;
+	}
+
+	.full-width-testimonial-section .slick-slider {
+	  margin-bottom: 0px;
+	}
+
+	.full-width-testimonial-text,
+	.full-width-testimonial-content,
+	.full-width-testimonial-source,
+	.full-width-testimonial-icon {
+	  padding-bottom: 2rem;
+	}
+
+	.full-width-testimonial-content {
+	  width: 100%;
+	}
+
+	/*4 up*/
+	.marketing-site-three-up {
+	  text-align: center;
+	  padding: 2rem 0;
+	}
+	
+	.marketing-site-three-up .row {
+	  max-width: 900px;
+	}
+
+	.marketing-site-three-up .columns {
+	  margin-bottom: 1rem;
+	}
+
+	@media screen and (min-width: 40em) {
+	  .marketing-site-three-up .columns {
+	    margin-bottom: 0;
+	  }
+	}
+
+	.marketing-site-three-up .fa {
+	  font-size: 13rem;
+	  margin-bottom: 1rem;
+	  color: #1779ba;
+	}
+
+	.marketing-site-three-up-headline {
+	  margin-bottom: 2rem;
+	  font-size: 24px;
+	}
+	i {
+		font-size: 3em;
+	}
+
+	/*Footer*/
+	footer {
+		font-family: 'Raleway', sans-serif;
+		margin-top: 5em;
+		color: black;
+		text-align: center;
+	}
+	footer a {
+		text-decoration: none;
+		color: black;
+		font-family: 'Raleway', sans-serif;
+	}
+	footer a:hover {
+		color: blue;
+	}
+
+}

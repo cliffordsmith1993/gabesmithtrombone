@@ -1,0 +1,287 @@
+/*
+  Copyright: www.gabesmithtrombone.com 2017
+  Created and Powered by: CS4 Development
+  Update: 6/7/2017
+  Form CSS
+*/
+html body {
+  background-color: #F3F3F3;
+  background-image:url('https://static.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Standard Screens*/
+@media screen and (min-width: 800px) {
+  #contactus fieldset {
+    width:320px;
+    padding:20px;
+    border:1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;   
+    margin-top: -43em;
+    margin-left: 10em;
+    background-color: #F3F3F3;
+  }
+
+  #contactus legend, h2 {
+     font-family : 'Raleway', sans-serif;
+     font-size: 1.3em;
+     font-weight:bold;
+     color:#333;
+  }
+
+  #contactus label {
+     font-family : 'Raleway', sans-serif;
+     font-size:0.8em;
+     font-weight: bold;
+  }
+
+  #contactus input[type="text"],textarea {
+    font-family : 'Raleway', sans-serif;
+    font-size: 0.8em;
+    line-height:140%;
+    color : #000; 
+    padding : 3px; 
+    border : 1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+  }
+
+  #contactus input[type="text"] {
+    height:30px;
+    width:220px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;   
+    margin-top: -1em;
+    
+  }
+
+  #contactus #scaptcha {
+    width:80px;
+    height:25px;
+    margin-top: .5em;
+  }
+
+  #contactus input[type="submit"] {
+     width:100px;
+     height:30px;
+     padding-left:0px;
+     border: none;
+     background-color: lightgray;
+  }
+
+  #contactus textarea {
+    margin-top: -1.3em;
+    height:120px;
+    width:310px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;  
+  }
+
+  #contactus input[type="text"]:focus,textarea:focus {
+    color : #009;
+    border : 1px solid #990000;
+    background-color : #ffff99;
+    font-weight:bold;
+  }
+
+  #contactus .container {
+     margin-bottom: 10px;
+  }
+
+  #contactus .error {
+     font-family: 'Raleway', sans-serif; 
+     font-size: 0.7em;
+     color: #900;
+     background-color : #ffff00;
+  }
+
+  #contactus fieldset#antispam {
+     padding:2px;
+     border-top:1px solid #EEE;
+     border-left:0;
+     border-right:0;
+     border-bottom:0;
+     width:350px;
+  }
+
+  #contactus fieldset#antispam legend {
+     font-family : 'Raleway', sans-serif;
+     font-size: 0.8em;
+     font-weight:bold;
+     color:#333;   
+  }
+
+  #contactus .short_explanation {
+     font-family : 'Raleway', sans-serif;
+     font-size: 0.6em;
+     color:#333;   
+  }
+
+  /* spam_trap: This input is hidden. This is here to trick the spam bots*/
+  #contactus .spmhidip {
+     display:none;
+     width:10px;
+     height:3px;
+  }
+  #fg_crdiv
+  {
+     font-family : Arial, sans-serif;
+     font-size: 0.3em;
+     opacity: .2;
+     -moz-opacity: .2;
+     filter: alpha(opacity=20);   
+  }
+  #fg_crdiv p
+  {
+      display:none;
+  }
+}
+
+/*----Mobile Screens-------*/
+@media screen and (min-width: 0px) and (max-width:799px) {
+  #contactus fieldset {
+     width:320px;
+     padding:20px;
+     border:1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;   
+    margin-top: 5em;
+    margin-left: 1em;
+    background-color: #F3F3F3;
+  }
+
+  #contactus legend, h2 {
+     font-family : 'Raleway', sans-serif;
+     font-size: 1.3em;
+     font-weight:bold;
+     color:#333;
+  }
+
+  #contactus label {
+     font-family : 'Raleway', sans-serif;
+     font-size:0.8em;
+     font-weight: bold;
+  }
+
+  #contactus input[type="text"],textarea {
+    font-family : 'Raleway', sans-serif;
+    font-size: 0.8em;
+    line-height:140%;
+    color : #000; 
+    padding : 3px; 
+    border : 1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+  }
+
+  #contactus input[type="text"] {
+    height:24px;
+    width:220px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     border-radius: 5px;   
+     margin-top: -2em;
+    
+  }
+
+  #contactus #scaptcha {
+    width: 80px;
+    height:22px;
+    margin-top: 10px;
+  }
+
+  #contactus input[type="submit"] {
+     width:100px;
+     height:30px;
+     padding-left:0px;
+     
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+     border-radius: 5px;   
+  }
+
+  #contactus textarea {
+    margin-top: -1.3em;
+    height:120px;
+    width:310px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+     border-radius: 8px;  
+  }
+
+  #contactus input[type="text"]:focus,textarea:focus {
+    color : #009;
+    border : 1px solid #990000;
+    background-color : #ffff99;
+    font-weight:bold;
+  }
+
+  #contactus .container {
+     margin-bottom: 10px;
+  }
+
+  #contactus .error {
+     font-family: 'Raleway', sans-serif; 
+     font-size: 0.7em;
+     color: #900;
+     background-color : #ffff00;
+  }
+
+  #contactus fieldset#antispam {
+     padding:2px;
+     border-top:1px solid #EEE;
+     border-left:0;
+     border-right:0;
+     border-bottom:0;
+     width:350px;
+  }
+
+  #contactus fieldset#antispam legend {
+     font-family : 'Raleway', sans-serif;
+     font-size: 0.8em;
+     font-weight:bold;
+     color:#333;   
+  }
+
+  #contactus .short_explanation {
+     font-family : 'Raleway', sans-serif;
+     font-size: 0.6em;
+     color:#333;   
+  }
+
+  /* spam_trap: This input is hidden. This is here to trick the spam bots*/
+  #contactus .spmhidip {
+     display:none;
+     width:10px;
+     height:3px;
+  }
+  #fg_crdiv
+  {
+     font-family : Arial, sans-serif;
+     font-size: 0.3em;
+     opacity: .2;
+     -moz-opacity: .2;
+     filter: alpha(opacity=20);   
+  }
+  #fg_crdiv p
+  {
+      display:none;
+  }
+}
