@@ -1,7 +1,7 @@
 /*
 	Copyright: www.gabesmithtrombone.com 2017
 	Created and powered by: CS4 Development
-	Update: 6/17/2017
+	Update: 6/20/2017
 */
 
 /*About Page*/
@@ -9,7 +9,7 @@
 @media screen and (min-width: 800px) {
 	body.body {
 		background-color: #f3f3f3;
-		background-image: url('https://static.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg');
+		background-image: url('');
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -48,7 +48,7 @@
 		border-right: none;
 		border-left: none;
 	}
-	.responsive-menu {
+	.mobilecontainer {
 		display: none;
 	}
 
@@ -142,6 +142,7 @@
 		display: block;
 		margin-top: .6em;
 	}
+
 	div.header header a:hover {
 		color: black;
 	}
@@ -150,58 +151,152 @@
 		display: none;
 	}
 
+	/*Mobile Nav*/
 
-	.menu-btn div {
-		position: absolute;
-		left: 100%;
-		top: 64%;
-		padding-right: 8px;
-		margin-top: -0.50em;
-		line-height: 1.2;
-		font-size: 18px;
-		font-weight: 200;
-		vertical-align: middle;
-		z-index: 99;
-	}
-	.mobile-nav {
-		position: absolute;
-		display: block;
-		margin-top: -2.1em;
-		margin-left: 1em;
-	}
-	.menu-btn span {
-		display: block;
-		width: 40px;
-		height: 5px;
-		margin: 5px 0;
-		background: rgb(0,0,0);
-		z-index: 99;
+	div.top-bar {
+		background: none;
+		margin-top: -3.3em;
 	}
 
-	.responsive-menu{
-		display: none;
-		border: 1px solid black;
-		background-color: #f3f3f3;
-	}
-	.responsive-menu li, .responsive-menu li a {
-		font-family: 'Raleway', sans-serif;
-		text-align: center;
-		list-style-type: none;
-		text-decoration: none;
-		color: black;
-		margin-right: 1em;
-	}
-	.responsive-menu li a:hover {
-		color: blue;
-		border: 1px solid blue;
-		border-right: none;
-		border-left: none;
-	}
-	.expand {
-		display: block !important; 
-		position: absolute;
-	}
 	
+	.offcanvas-full-screen {
+	  position: fixed;
+	  z-index: 1;
+	  transition: -webkit-transform 0.3s ease-in-out;
+	  transition: transform 0.3s ease-in-out;
+	  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	  -webkit-backface-visibility: hidden;
+	  backface-visibility: hidden;
+	  background: rgba(1,1,1,.9);
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  -webkit-transform: translateX(-100%);
+	  -ms-transform: translateX(-100%);
+	  transform: translateX(-100%);
+	  overflow-y: auto;
+	}
+
+	[data-whatinput='mouse'] .offcanvas-full-screen {
+	  outline: 0;
+	}
+
+	.offcanvas-full-screen.is-transition-overlap {
+	  z-index: 10;
+	}
+
+	.offcanvas-full-screen.is-transition-overlap.is-open {
+	  box-shadow: 0 0 10px rgba(10, 10, 10, 0.7);
+	}
+
+	.offcanvas-full-screen.is-open {
+	  -webkit-transform: translate(0, 0);
+	  -ms-transform: translate(0, 0);
+	  transform: translate(0, 0);
+	}
+
+	.offcanvas-full-screen.is-open ~ .off-canvas-content {
+	  -webkit-transform: translateX(100%);
+	  -ms-transform: translateX(100%);
+	  transform: translateX(100%);
+	}
+
+	.offcanvas-full-screen.is-transition-push:after {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 1px;
+	  box-shadow: 0 0 10px rgba(10, 10, 10, 0.7);
+	  content: " ";
+	}
+
+	.offcanvas-full-screen.is-transition-overlap.is-open ~ .off-canvas-content {
+	  -webkit-transform: none;
+	  -ms-transform: none;
+	  transform: none;
+	}
+
+	.offcanvas-full-screen-inner {
+	  padding: 1rem;
+	  text-align: center;
+	}
+
+	.offcanvas-full-screen-menu {
+	  margin: 0;
+	  list-style-type: none;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-flex-wrap: nowrap;
+	  -ms-flex-wrap: nowrap;
+	  flex-wrap: nowrap;
+	  -webkit-align-items: center;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  width: 100%;
+	  -webkit-flex-wrap: wrap;
+	  -ms-flex-wrap: wrap;
+	  flex-wrap: wrap;
+	}
+
+	.offcanvas-full-screen-menu li {
+	  -webkit-flex: 0 0 auto;
+	  -ms-flex: 0 0 auto;
+	  flex: 0 0 auto;
+	}
+
+	[data-whatinput='mouse'] .offcanvas-full-screen-menu li {
+	  outline: 0;
+	}
+
+	.offcanvas-full-screen-menu  li a {
+	  display: block;
+	  padding: 0.7rem 1rem;
+	  line-height: 1;
+	}
+
+	.offcanvas-full-screen-menu input,
+	.offcanvas-full-screen-menu select,
+	.offcanvas-full-screen-menu a,
+	.offcanvas-full-screen-menu button {
+	  margin-bottom: 0;
+	}
+
+	.offcanvas-full-screen-menu li {
+	  -webkit-flex: 0 0 100%;
+	  -ms-flex: 0 0 100%;
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+
+	.offcanvas-full-screen-menu li a {
+	  -webkit-justify-content: flex-start;
+	  -ms-flex-pack: start;
+	  justify-content: flex-start;
+	  -webkit-align-items: flex-start;
+	  -ms-flex-align: start;
+	  align-items: flex-start;
+	}
+
+	.offcanvas-full-screen-menu a {
+	  color: #fefefe;
+	}
+
+	.offcanvas-full-screen-menu a:hover {
+	  color: #b2b2b2;
+	}
+
+	.offcanvas-full-screen-close {
+	  color: #fefefe;
+	  font-size: 5rem;
+	}
+
+	.offcanvas-full-screen-close:hover {
+	  color: #b2b2b2;
+	}
+	/*Bio*/
 	.about-the-author {
 	  background-color: #E4E4E4;
 	  padding: 1rem;

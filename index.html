@@ -2,7 +2,7 @@
 <!--
 	Copyright: www.gabesmithtrombone.com 2017
 	Created and powered by: CS4 Development
-	Update: 6/8/2017
+	Update: 6/20/2017
 	Home Page
 -->
 <html>
@@ -18,59 +18,67 @@
 
 	<body class="body">
 
-	<div class="header">	
-	  <header>
-		<a>Gabe Smith</a>
-	  </header>
-	</div>
+		<div class="header">	
+		  <header>
+			<a>Gabe Smith</a>
+		  </header>
+		</div>
 	
-	<div>
-	  <nav class="navbar">
-		<ul>
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="about/about.html">About</a></li>
-		  <li><a href="media/media.html">Media</a></li>	
-		  <li><a href="lessons/lessons.html">Lessons</a></li>
-		  <li><a href="form/contactform.php">Contact</a></li>
-		</ul>
-	  <nav>
-	</div>
+	<!-- Start Main Nav -->	
+		<div>
+		  <nav class="navbar">
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="about/about.html">About</a></li>
+			  <li><a href="media/media.html">Media</a></li>	
+			  <li><a href="lessons/lessons.html">Lessons</a></li>
+			  <li><a href="form/contactform.php">Contact</a></li>
+			</ul>
+		  <nav>
+		</div>
+	<!-- End Main Nav -->
 
-	<div class="mobile-nav">
-	     <div class="menu-btn" id="menu-btn">
-		   <div></div>
-		   <span></span>
-		   <span></span>
-		   <span></span>
-	     </div>
-	     <div class="responsive-menu">
-	        <ul>
-	           <li><a href="index.html">Home</a></li>
-	           <li><a href="about/about.html">About</a></li>
-	           <li><a href="media/media.html">Media</a></li>
-	           <li><a href="lessons/lessons.html">Lessons</a></li>
-	           <li><a href="form/contactform.php">Contact</a></li>
-	        </ul>
-	     </div>
-	</div>
-	
-	<!--Icons-->
-	<div class="icons">
-	  <a href="https://www.linkedin.com/in/gabriel-smith-906bb0ab/"><img src="images/linkedin-logo.png" height="50" width="50"></a>
-	  <a href="https://www.facebook.com/profile.php?id=100009486104288"><img src="images/facebook-logo.png" height="50" width="50"></a>
-	</div>
+	<!-- Start Mobile Nav -->
+	  <div class="mobilecontainer">
+		<div id="offcanvas-full-screen" class="offcanvas-full-screen" data-off-canvas data-transition="overlap">
+		  <div class="offcanvas-full-screen-inner">
+		    <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
+		      <span aria-hidden="true">&times;</span>
+		    </button>
+
+		    <ul class="offcanvas-full-screen-menu">
+		      <li><a href="index.html">Home</a></li>
+		      <li><a href="about/about.html">About</a></li>
+		      <li><a href="media/media.html">Media</a></li>
+		      <li><a href="lessons/lessons.html">Lessons</a></li>
+		      <li><a href="form/contactform.php">Contact</a></li>
+		    </ul>
+		  </div>
+		</div>
+
+		<div class="off-canvas-content" data-off-canvas-content>
+		  <div class="top-bar">
+		    <div class="top-bar-left">
+		      <button class="menu-icon dark" type="button" data-toggle="offcanvas-full-screen"></button>
+		    </div>
+		  </div>
+		</div>
+	  </div>
+	<!-- End Mobile Nav -->
+
+		
+		<!-- Start Icons -->
+		<div class="icons">
+		  <a href="https://www.linkedin.com/in/gabriel-smith-906bb0ab/"><img src="images/linkedin-logo.png" height="50" width="50"></a>
+		  <a href="https://www.facebook.com/profile.php?id=100009486104288"><img src="images/facebook-logo.png" height="50" width="50"></a>
+		</div>
+		<!-- End Icons -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js"></script>
+		<script>$(document).foundation();</script>
 	</body>
 
-	<footer>&copy; 2017 Gabe Smith. Powered by <a href="https://www.cs4development.com">CS4 Development</a></footer>
-	<!--<script src="script.js"></script>-->
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<footer>&copy; 2017 Gabe Smith. Site powered by <a href="http://www.cs4development.com">CS4 Development</a></footer>
 
-	<script type="text/javascript">
-		jQuery(function($){
-	    	     $( '.menu-btn' ).click(function(){
-	    	     $('.responsive-menu').toggleClass('expand')
-	    	     })
-	        })
-	</script>
-
-	</html>
+</html>
